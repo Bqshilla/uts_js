@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>latihan</title>
+</head>
+<body>
+
+    <button id="tampiljerapah">tampilkan jerapah</button>
+    <button id="tampilkurakura">tampilkan kurakura</button>
+    <button id="tampilhiu">tampilkan hiu</button>
+    <button id="tampilburung">tampilkan burung</button>
+    <img id="gambar" src="">
+
+    <script>
+        const btnGambarjerapah = document.getElementById("tampiljerapah");
+        const btnGambarkurakura = document.getElementById("tampilkurakura");
+        const btnGambarhiu = document.getElementById("tampilhiu");
+        const btnGambarburung = document.getElementById("tampilburung");
+
+
+        function tampiljerapah(){
+            let image = document.getElementById("gambar");
+            image.src ="jerapah.jpg";
+        }
+
+        function tampilkurakura(){
+            let image = document.getElementById("gambar");
+            image.src = "kura kura.jpg";
+        }
+
+        function tampilhiu(){
+            let image = document.getElementById("gambar");
+            image.src = "hiu.jpg";
+        }
+
+        function tampilburung(){
+            let image = document.getElementById("gambar");
+            image.src = "burung.jpg";
+        }
+
+         btnGambarjerapah.addEventListener("click", tampiljerapah);
+        btnGambarkurakura.addEventListener("click", tampilkurakura);
+        btnGambarhiu.addEventListener("click", tampilhiu);
+        btnGambarburung.addEventListener("click", tampilburung);
+
+
+    </script>
+    
+</body>
+</html>
